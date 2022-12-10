@@ -28,7 +28,9 @@ struct ContentView: View {
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
                 }
-        }.environmentObject(FeedViewModel())
+        }
+        .environmentObject(FeedViewModel())
+        .environmentObject(SettingsViewModel())
     }
 }
 
@@ -36,5 +38,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(FeedViewModel())
+            .environmentObject(SettingsViewModel())
     }
 }

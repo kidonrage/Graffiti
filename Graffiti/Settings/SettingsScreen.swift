@@ -9,23 +9,22 @@ import SwiftUI
 
 struct SettingsScreen: View {
     
-    @State var userName = "Anonymous"
-    @State var isModalOpened = false
+    @EnvironmentObject var viewModel: SettingsViewModel
     
     var body: some View {
         NavigationView {
             VStack {
-                Text("You're \(userName)")
+                Text("You're \(viewModel.userName)")
                     .padding(.vertical)
                 Button("Want to change something?") {
-                    isModalOpened.toggle()
+                    viewModel.isModalOpened.toggle()
                 }
             }
             .navigationTitle("Settings")
-            .sheet(isPresented: $isModalOpened) {
+            .sheet(isPresented: $viewModel.isModalOpened) {
                 VStack(alignment: .leading) {
                     Text("Enter your new name:").foregroundColor(.gray).font(.system(size: 14))
-                    TextField("Name", text:  $userName)
+                    TextField("Name", text:  $viewModel.userName)
                         .textFieldStyle(.roundedBorder)
                 }.padding(.horizontal)
             }

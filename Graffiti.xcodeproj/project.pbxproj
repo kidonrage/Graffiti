@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C61ABC0B2944C2580069A1B5 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61ABC0A2944C2580069A1B5 /* FeedViewModel.swift */; };
 		C61ABC0D2944C41F0069A1B5 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61ABC0C2944C41F0069A1B5 /* Board.swift */; };
+		C61ABC0F2944CC430069A1B5 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61ABC0E2944CC430069A1B5 /* SettingsViewModel.swift */; };
 		C6E8BBD82943C5D9000422CA /* GraffitiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E8BBD72943C5D9000422CA /* GraffitiApp.swift */; };
 		C6E8BBDA2943C5D9000422CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E8BBD92943C5D9000422CA /* ContentView.swift */; };
 		C6E8BBDC2943C5D9000422CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E8BBDB2943C5D9000422CA /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		C61ABC0A2944C2580069A1B5 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		C61ABC0C2944C41F0069A1B5 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		C61ABC0E2944CC430069A1B5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		C6E8BBD42943C5D9000422CA /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E8BBD72943C5D9000422CA /* GraffitiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraffitiApp.swift; sourceTree = "<group>"; };
 		C6E8BBD92943C5D9000422CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C6E8BBE92943C798000422CA /* SettingsScreen.swift */,
+				C61ABC0E2944CC430069A1B5 /* SettingsViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				C6E8BBEA2943C798000422CA /* SettingsScreen.swift in Sources */,
 				C6E8BBF22943D51D000422CA /* RootRouter.swift in Sources */,
 				C6E8BBD82943C5D9000422CA /* GraffitiApp.swift in Sources */,
+				C61ABC0F2944CC430069A1B5 /* SettingsViewModel.swift in Sources */,
 				C6E8BBED2943C97D000422CA /* ProfileScreen.swift in Sources */,
 				C61ABC0B2944C2580069A1B5 /* FeedViewModel.swift in Sources */,
 			);
